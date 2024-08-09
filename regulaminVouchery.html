@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PolishingCars</title>
+    <title>Regulamin Voucher - PolishingCars</title>
     <link href="./style.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,20 +14,12 @@
         <nav>
             <a href="#"><img src="./zdjęcia/logo.jpg" class="logo"></a>
             <ul>
-                <li class="hideOnMobile"><a href="#Promocje">Promocje</a></li>
-                <li class="hideOnMobile"><a href="#Vouchery">Vouchery</a></li>
+                <li class="hideOnMobile"><a href="/">Strona główna</a></li>
                 <li onclick=showSidebar()><a style="cursor: pointer;" class="hideOnMobile">Usługi<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg></a></li>
-                <li class="hideOnMobile"><a href="#Realizacje">Realizacje</a></li>
-                <li class="hideOnMobile"><a href="#Kontakt">Kontakt</a></li>
                 <li onclick=showSidebar() style="cursor: pointer;" class="showOnMobile"><a><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
                 
             </ul>
             <ul class="sidebar">
-                <li class="showOnMobile"><a href="#Promocje">Promocje</a></li>
-                <li class="showOnMobile"><a href="#Vouchery">Vouchery</a></li>
-                <li class="showOnMobile"><a href="#Realizacje">Realizacje</a></li>
-                <li class="showOnMobile"><a href="#Kontakt">Kontakt</a></li>
-                <hr class="showOnMobile" style="color: white; width: 95%; margin: auto;">
                 <li><a href="/ceramika.html">Ceramika</a></li>
                 <li><a href="/szyby.html">Polerowanie szyb</a></li>
                 <li><a href="/lakier.html">Polerowanie lakieru</a></li>
@@ -37,113 +29,11 @@
             </ul>
         </nav>
     </header>
-
-    <section id="main">
-        <div style="background-color: rgba(0, 0, 0, 0.5); padding: 2rem; border-radius: 10px;">
-        <h1>STUDIO polishing cars</h1>
-        <p>Tworzą profesjonaliści, którzy z&nbsp;pasją i&nbsp;pełnym zaangażowaniem podchodzą do każdego powierzonego im projektu. 
-            Posiadamy 15-letnie doświadczenie w&nbsp;kompleksowej odnowie i&nbsp;długoterminowym zabezpieczeniu nowych i&nbsp;używanych samochodów.</p>
-        </div>
+      
+    <section style="display: flex; justify-content: center; align-items: center; padding-left: 10%; padding-right: 10%; min-height: calc(100vh - 100px);">
+        <img style="max-width: 100%; height: auto;" src="./zdjęcia/voucher-regulamin.png">
     </section>
-
-    <section id="Promocje">
-        <article>
-            <h2 style="color: rgb(215, 0, 0);">-10% dla nowych klientów</h2>
-            <p>Wybierz doskonałą pielęgnację dla swojego samochodu w&nbsp;firmie Polishing Cars! 
-                Teraz możesz skorzystać z&nbsp;promocji -10% na wszystkie usługi detailingowe. Odkryj, 
-                jak możemy przywrócić blask Twojemu pojazdowi. Oferta ważna do odwołania. 
-                Nie przegap okazji – zadbaj o&nbsp;swój samochód już teraz!
-            </p>
-        </article>
-        <div>
-            <img src="./zdjęcia/promocja.jpg">
-        </div>
             
-    </section>
-
-    <section id="Vouchery">
-        <div>
-            <img src="./zdjęcia/voucher.jpg">
-        </div>
-        <article>
-            <h2 style="color: rgb(215, 0, 0);">Vouchery</h2>
-            <p>Zapraszamy do skorzystania&nbsp;z naszej ekskluzywnej oferty vouchera na usługi detailingowe w&nbsp;firmie Polishing Cars. 
-                Oferujemy profesjonalne usługi, które odmienią wygląd i&nbsp;kondycję Twojego pojazdu.</p>
-            <p><a href="/regulaminVouchery.html">Regulamin</a></p>
-        </article>
-    </section>
-
-    <section id="Uslugi" >
-        <h2>Usługi</h2>
-        <div class="conteiner">
-            <div class="element" style="background-image: url('./zdjęcia/usluga1.jpg');">
-                <h3>Ceramika</h3>
-                <a href="/ceramika.html">Szczegóły</a>
-            </div>
-            <div class="element" style="background-image: url('./zdjęcia/usluga2.avif');">
-                <h3>Polerowanie szyb</h3>
-                <a href="/szyby.html">Szczegóły</a>
-            </div>
-            <div class="element" style="background-image: url('./zdjęcia/usluga3.avif');">
-                <h3>Polerowanie lakieru</h3>
-                <a href="/lakier.html">Szczegóły</a>
-            </div>
-            <div class="element" style="background-image: url('./zdjęcia/usluga4.avif');">
-                <h3>Felgi opony</h3>
-                <a href="/felgi.html">Szczegóły</a>
-            </div>
-            <div class="element" style="background-image: url('./zdjęcia/usluga5.jpg');">
-                <h3>Detaling wnetrza</h3>
-                <a href="/wnetrze.html">Szczegóły</a>
-            </div>
-            <div class="element" style="background-image: url('./zdjęcia/usluga6.jpg');">
-                <h3>Renowacja zewnetrzna reflektorow</h3>
-                <a href="/reflektory.html">Szczegóły</a>
-            </div>
-            
-        </div>
-    </section>
-
-    <section id="Realizacje">
-        <h2 style="color: rgb(215, 0, 0);">Realizacje</h2>
-        <p>Zobacz nasz kanał na youtube. </p>
-        <div>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/vOqgIN-mnKo?si=0bmShvevKdZDYlQ5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/W9ykwz67g0o?si=HETiAlRfWxojEXiu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/ncYPPQ4uRfM?si=2fQ26trv91R4Xrbm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-    
-    </section >
-
-    <section id="Kontakt">
-        <article>
-        <h2 style="color: rgb(215, 0, 0);">Skontaktuj się z&nbsp;nami</h2>
-        <div>
-        <label>
-            Adres
-            <p>Krośniewicka 2a 03-601 Warszawa</p>
-        </label>
-        <label>
-            Email
-            <p>polishingcarswarszawa@gmail.com</p>
-        </label>
-        <label>
-            Numer telefonu
-            <p>535 253 523</p>
-        </label>
-        <label >
-            <h2 style="color: rgb(215, 0, 0);">Godziny otwarcia</h2>
-            <p>Pon-Pt 9:00 - 18:00</p>
-            <p>Sobota nieczynne</p>
-            <p>Niedziela nieczynne</p>
-        </label>
-    </div>
-    </article>
-    <div>
-        <img src="./zdjęcia/kontakt.avif">
-    </div>
-    </section>
-
     <iframe class="googleMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2440.942493943756!2d21.06043397720262!3d52.28074597199942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecfa8090897ab%3A0x8b2eb599a1073215!2sPolishing%20Cars!5e0!3m2!1spl!2spl!4v1723122469769!5m2!1spl!2spl" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
     <section id="Footer">

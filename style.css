@@ -13,14 +13,59 @@ html {
 body {
     padding-top: 100px;
     min-height: 100vh;
-    background-color: rgb(41, 41, 41);
+    background-color: rgb(0, 0, 0);
     overflow-x: hidden;
+    color: white;
 }
 
 ul, ol {
     list-style-type: none;
     padding-left: 0; /* Optionally remove padding to align content properly */
   }
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 0.8rem;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+p {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+@media(max-width: 800px){
+    h1 {
+        font-size: 3rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    p {
+        font-size: 2rem;
+    }
+}
+
+@media(max-width: 600px){
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    p {
+        font-size: 1.5rem;
+    }
+}
 
 /* HEADER */
 
@@ -29,7 +74,7 @@ header {
     left: 0;
     right: 0;
     top: 0;
-    
+    z-index: 999;
 }
 
 .logo {
@@ -45,6 +90,9 @@ nav {
     justify-content:space-between;
     text-decoration: none;
     height: 100px;
+    border-bottom: solid;
+    border-width: 1px;
+    border-color: rgb(189, 0, 0);
 }
 
 nav ul {
@@ -126,7 +174,7 @@ nav li:first-child{
 /* main */
 #main {
     height: calc(100vh - 100px);
-    background-image: url('./zdjęcia/photo-1607860108358-47c0441e7adb.jpg');
+    background-image: url('./zdjęcia/main.jpg');
     background-size: cover;
     background-position: center;
     display: flex; 
@@ -139,38 +187,390 @@ nav li:first-child{
       padding-right: 25%;
 }
 
-#main h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    font-weight: bold;
-}
-
-#main p {
-    font-size: 2rem;
-    font-weight: bold;
-}
-
 @media(max-width: 800px){
     #main {
           padding-left: 5%;
           padding-right: 5%;
     }
-    #main h1 {
-        font-size: 3rem;
-        margin-bottom: 0.5rem;
+}
+
+/* Promocje */
+
+#Promocje {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    padding: 10%;
+    align-items: center;
+}
+
+#Promocje article {
+    text-align: center; 
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+#Promocje img {
+    margin-top: 20px;
+    height: 500px;
+    width: 650px;
+    object-fit: cover;
+}
+
+@media(max-width: 1400px){
+    #Promocje {
+        flex-direction: column;
+          padding-left: 5%;
+          padding-right: 5%;
+          justify-content: center; 
+      align-items: center; 
+      text-align: center; 
     }
-    
-    #main p {
-        font-size: 2rem;
+
+    #Promocje article {
+        margin-top: 5%;
+    }
+
+    #Promocje img {
+        margin-top: 20px;
+        height: 300px;
+        width: 360px;
     }
 }
 
-@media(max-width: 600px){
-    #main h1 {
-        font-size: 2.5rem;
+/* Vouchery */
+
+#Vouchery {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    padding: 10%;
+    align-items: center;
+}
+
+#Vouchery article {
+    text-align: center; 
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+#Vouchery img {
+    margin-top: 20px;
+    height: 500px;
+    object-fit: cover;
+}
+
+#Vouchery a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: white;
+}
+
+#Vouchery a:hover {
+    opacity: 0.5;
+}
+
+@media(max-width: 1400px){
+    #Vouchery {
+        flex-direction: column;
+          padding-left: 5%;
+          padding-right: 5%;
+          justify-content: center; 
+      align-items: center; 
+      text-align: center; 
     }
-    
-    #main p {
-        font-size: 1.5rem;
+
+    #Vouchery article {
+        margin-top: 5%;
+    }
+
+    #Vouchery img {
+        margin-top: 20px;
+        height: 300px;
+        width: 360px;
+    }
+}
+
+/* Realizacje */
+
+#Realizacje {
+    text-align: center;
+    padding: 10%;
+}
+
+#Realizacje h2{
+    margin-bottom: 10px;
+}
+
+#Realizacje p{
+    margin-bottom: 20px;
+}
+
+#Realizacje iframe{
+    width: 460px;
+    height: 215px;
+    margin: 10px;
+}
+
+@media(max-width: 650px){
+    #Realizacje iframe{
+        width: calc(560px/2);
+    height: calc(315px/2);
+    }
+}
+
+/* Uslugi */
+
+#Uslugi {
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+#Uslugi h2{
+    margin-bottom: 20px;
+}
+
+#Uslugi .conteiner{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: left;
+}
+
+#Uslugi .element {
+    background-size: cover;
+    background-position: center;
+    width: 275px;
+    height: 500px;
+    padding: 20px;
+    position: relative;
+    z-index: 0;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+#Uslugi .element a{
+    background-color: rgb(167, 0, 0);
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+
+
+#Uslugi .element a:hover {
+    filter: brightness(50%);
+}
+
+@media(min-width: 1000px){
+    #Uslugi .element:hover {
+        background-size: 150%; /* Zoom in by increasing the size */
+        transition: background-size 0.5s;
+    }
+}
+
+
+/* Kontakt */
+
+#Kontakt {
+    display: flex;
+    flex-direction: row;
+    padding: 10%;
+    align-items: center;
+    justify-content: center;
+}
+
+#Kontakt article {
+    padding: 20px;
+}
+
+#Kontakt label{
+    font-size: 2.5rem;
+    margin-bottom: 0.8rem;
+    font-weight: bold;
+}
+
+#Kontakt img {
+    height: 500px;
+    width: 650px;
+    object-fit: cover;
+}
+
+@media(max-width: 1400px){
+    #Kontakt {
+        flex-direction: column;
+          padding-left: 5%;
+          padding-right: 5%;
+          justify-content: center; 
+      align-items: center; 
+      text-align: center; 
+    }
+
+    #Kontakt article {
+        margin-top: 5%;
+        
+    }
+
+    #Kontakt label{
+        font-size: 2rem;
+        margin-bottom: 0.6rem;
+        font-weight: bold;
+    }
+
+    #Kontakt p{
+        font-size: 1.3rem;
+        margin-bottom: 0.6rem;
+        font-weight: bold;
+    }
+
+    #Kontakt img {
+        margin-top: 20px;
+        height: 300px;
+        width: 360px;
+    }
+}
+
+/* googleMap */
+
+.googleMap {
+    display: flex;
+    width: 100%;
+}
+
+/* Footer */
+
+#Footer {
+    background-color: rgb(181, 0, 0);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex: 1;
+    align-items: center;
+}
+
+#Footer div{
+    display: flex;
+    flex: 1;
+    padding: 2px;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+#Footer svg{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#Footer a {
+    text-decoration: none;
+    color:white;
+}
+
+#Footer svg:hover{
+    opacity: 0.7;
+}
+
+#Footer .creator:hover {
+    background-color: white;
+    color:black;
+    border-radius: 2px;
+}
+
+@media(max-width: 700px){
+    #Footer div{
+        font-size: 0.6rem;
+    }
+    #Footer svg{
+        width: 13px;
+        height: 13px;
+    }
+}
+
+/* Podstronny */
+
+.Podstronny {
+    min-height: calc(100vh - 100px);
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.Podstronny .conteiner{
+    padding: 20px;
+}
+
+.Podstronny h2{
+    font-size: 2rem;
+}
+
+.Podstronny p{
+    font-size: 1.2rem;
+}
+
+.Podstronny img {
+    width: 600px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Podstronny .Cennik {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.Podstronny .conteiner2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.Podstronny .conteiner2 .segment{ 
+    margin-top: 20px;
+    border: solid;
+    border-color: red;
+    border-radius: 3px;
+    font-size: 1.5rem;
+    padding: 10px;
+    text-align: center;
+}
+
+.Podstronny .conteiner2 .segment p{ 
+    font-size: 2rem;
+}
+
+@media(max-width: 1670px){
+    .Podstronny img {
+        width: 400px;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+@media(max-width: 1400px){
+    .Podstronny {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+    .Podstronny img {
+        height: 400px;
+        width: 300px;
+        object-fit: cover;
     }
 }
